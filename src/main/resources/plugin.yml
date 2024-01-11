@@ -1,0 +1,51 @@
+name: NaurelliaPerms
+version: '${project.version}'
+main: fr.naurellia.naurelliaperms.NaurelliaPerms
+api-version: '1.20'
+commands:
+  perms:
+    description: NaurelliaPerms command
+    aliases: [ naurelliaperms, np ]
+    permission: naurellia.staff.admin
+  setrank:
+    description: Setrank command
+    aliases: [ setrank, sr ]
+    permission: naurellia.staff.admin
+permissions:
+  naurellia.staff.admin:
+    description: Admin staff permission
+    default: false
+    children:
+      naurellia.staff.builder:
+        description: Builder staff permission
+        default: false
+      naurellia.staff.srmod:
+        description: Senior Mod staff permission
+        default: false
+        children:
+          naurellia.staff.mod:
+            description: Mod staff permission
+            default: false
+            children:
+              naurellia.staff.helper:
+                description: Helper staff permission
+                default: false
+  naurellia.player.royal:
+    description: Royal rank permission
+    default: false
+    children:
+      naurellia.player.premium:
+        description: Premium rank permission
+        default: false
+        children:
+          naurellia.player.legend:
+            description: Legend rank permission
+            default: false
+            children:
+              naurellia.player.hero:
+                description: Hero rank permission
+                default: false
+                children:
+                  naurellia.player.player:
+                    description: Player rank permission
+                    default: true

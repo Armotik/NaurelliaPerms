@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="NaurelliaPerms:jar">
+    <output-path>$PROJECT_DIR$/../../../../Minecraft Server/plugins</output-path>
+    <root id="archive" name="NaurelliaPerms.jar">
+      <element id="module-output" name="NaurelliaPerms" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/zaxxer/HikariCP/5.0.1/HikariCP-5.0.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/2.0.0-alpha1/slf4j-api-2.0.0-alpha1.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
